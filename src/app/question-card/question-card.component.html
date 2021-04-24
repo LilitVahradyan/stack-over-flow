@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col">
+      <div>
+        <div class="card-body">
+          <h5 class="card-title">{{question.question}}</h5>
+          <p class="card-text">{{question.description}}</p>
+          <p class="card-text">Created Date: {{question.date | date : 'short'}}</p>
+          <div class="d-flex justify-content-between m-auto w-50">
+            <button (click)="upVote()" class="btn btn-primary">UpVote</button>
+            <p>{{question.votes? question.votes : 0}}</p>
+            <button (click)="downVote()" class="btn btn-primary">DownVote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <app-add-question (onAddQuestion)="updateList($event)">
+
+  </app-add-question>
+ 
+  <div class="d-flex row">
+    <app-question-card *ngFor = "let question of questions; let idx=index" 
+        [ngClass]="getBadVotes(idx)? 'badClass': '' "
+        [ngClass]="idx < 3 ? 'good' : ''"
+        [question] = "question"
+        [sort] = "sortBy()"
+        class="col-xl-12 my-3 question-card" >
+    </app-question-card>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.badClass{
+  background-color: rgba(231, 76, 60, 1);
+}
+.good{
+  background-color: rgba(102, 204, 153, 1);
+}
+.question-card{
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem
+}
